@@ -1,0 +1,41 @@
+.single__course__item{
+    padding: 50px 0;
+    background-color: #fff;
+    margin-bottom: 35px;
+    border-radius: 10px;
+  }
+  
+  .courses{
+    background-color: rgb(244, 237, 223);
+    margin: 50px 60px;
+    padding: 30px;
+  } 
+
+  .courses-list{
+    background-color: rgb(244, 237, 223);
+    padding: 30px;
+  }
+
+  .single__course__item {
+    padding: 15px;
+  }
+  
+  .course__img img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .enroll a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0a2b1e;
+  }
+  
+  .course__title {
+    line-height: 2rem;
+  }
+  
+  .course__top__left h2 {
+    font-weight: 600;
+  }

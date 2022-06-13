@@ -1,0 +1,43 @@
+.team{
+    background-color:rgb(208, 181, 234);
+    padding: 30px;
+  }
+
+  .single__team__item{
+    background-color: #fff;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    padding: 5px 5px;
+  }
+
+  .single__team__item:hover {
+    background-color: rgb(0, 97, 224);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .teamm_img img{
+      width: 100%;
+      height:100%;
+  }
+  
+  .team__img img {
+    border-radius: 10px; 
+    width: 100%;
+    height: 100%;
+  }
+  
+  .team__title:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .team__top__left h2 {
+    font-weight: 600;
+  }
+
+  .team__details h6 {
+    font-weight: 600;
+    text-align: center;
+  }

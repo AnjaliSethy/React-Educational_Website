@@ -1,0 +1,8 @@
+.testimonial{
+    background-color:  #dbeef6;
+    padding: 30px;
+  }
+  
+  .testimonial__content h2 {
+      font-weight: 600;
+    }

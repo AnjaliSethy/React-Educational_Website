@@ -1,0 +1,16 @@
+.features{
+    background-color: #dbeef6;
+    padding: 30px;
+  }
+  
+  .single__feature{
+    box-shadow: 0 5px 15px -2px;
+  }
+  
+  .single__feature h2 i {
+      font-size: 2.5rem;
+  }
+    
+  .single__feature h6 {
+      font-weight: 600;
+  }

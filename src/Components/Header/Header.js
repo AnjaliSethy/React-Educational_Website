@@ -1,0 +1,73 @@
+import React, { useRef } from "react";
+import { Container } from "reactstrap";
+import "./header.css";
+
+const navLinks = [
+  {
+    display: "Home",
+    url: "/",
+  },
+  {
+    display: "About",
+    url: "/about",
+  },
+
+  {
+    display: "Courses",
+    url: "/courses",
+  },
+  {
+    display: "Team",
+    url: "/team",
+  },
+  {
+    display: "Blog",
+    url: "/blog",
+  },
+  {
+    display: "Contact Us",
+    url: "/contact",
+  },
+];
+
+const Header = () => {
+  const menuRef = useRef();
+
+  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+
+  return (
+    <header className="header">
+      <Container>
+        <div className="navigation d-flex align-items-center justify-content-between">
+          <div className="logo">
+            <h2 className=" d-flex align-items-center gap-1">
+              <i class="ri-pantone-line"></i> Learners.
+            </h2>
+          </div>
+
+          <div className="nav d-flex align-items-center gap-5">
+            <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
+              <ul className="nav__list">
+                {navLinks.map((item, index) => (
+                  <li key={index} className="nav__item">
+                    <a href={item.url}>{item.display}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+                   
+          <div className="mobile__menu">
+            <span>
+              <i class="ri-menu-line" onClick={menuToggle}></i>
+            </span>
+
+          </div><div class="start"><div class="button">GET CERTIFICATE</div></div>
+          <button class="toggle"><i class="fa fa-times"> </i></button>
+        </div>
+      </Container>
+    </header>
+  );
+};
+
+export default Header;
